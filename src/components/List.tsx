@@ -52,7 +52,7 @@ export function List({ todoList, setTodos }: TodoListProps) {
         />
       )}
 
-      <div className="mt-16 flex justify-between">
+      <div className="mt-16 flex justify-between flex-col gap-3 sm:flex-row sm:gap-0">
         <div className="flex gap-2 text-blue-500 text-sm font-bold">
           Tarefas criadas
           <span className="px-2 py-[2px] rounded-full text-gray-200 bg-gray-400 text-xs">

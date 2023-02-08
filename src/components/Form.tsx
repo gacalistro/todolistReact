@@ -36,7 +36,10 @@ export function Form({ todoList, setTodos }: TodoListProps) {
   }
 
   return (
-    <form onSubmit={handleCreateTodo} className="mt-12 flex gap-2">
+    <form
+      onSubmit={handleCreateTodo}
+      className="mt-12 flex gap-2 flex-col md:flex-row"
+    >
       <Input
         placeholder="Adicione uma nova tarefa"
         value={title}

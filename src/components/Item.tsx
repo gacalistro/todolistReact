@@ -29,14 +29,14 @@ export function Item({
 
       <div
         onClick={openModal}
-        className={clsx("flex-1", {
+        className={clsx("flex-1 break-all", {
           ["text-gray-300 line-through"]: checked,
         })}
       >
         {title}
       </div>
 
-      <div className="flex items-center justify-center before:content-[''] before:w-8 before:h-8 hover:before:bg-gray-400 before:rounded-lg before:absolute before:z-0">
+      <div className="self-start flex items-center justify-center before:content-[''] before:w-8 before:h-8 hover:before:bg-gray-400 before:rounded-lg before:absolute before:z-0">
         <button
           onClick={deleteItem}
           className=" [&>svg>*]:stroke-gray-300 [&>svg>*]:hover:stroke-danger [&>svg>rect]:stroke-none [&>svg>rect]:hover:stroke-none relative z-1"
